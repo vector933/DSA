@@ -56,7 +56,7 @@ struct poly *add(struct poly *p1, struct poly *p2){
         if(p1->t[i].exp > p2->t[j].exp)
             sum->t[k++]=p1->t[i++];
         else if(p1->t[i].exp < p2->t[j].exp)
-            sum->t[k++]=p1->t[j++];
+            sum->t[k++]=p2->t[j++];
         else{
             sum->t[k]=p1->t[i++];
             sum->t[k++].coeff += p2->t[j++].coeff;
